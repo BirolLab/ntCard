@@ -24,6 +24,8 @@ jobs:
     displayName: Install clang-format
   - script: make clang-format
     displayName: Run clang-format
+  - publish: ntcard.cpp.fixed
+    artifact: clang-format
 
 - job: linux_gcc9
   pool:

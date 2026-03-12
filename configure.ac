@@ -1,6 +1,6 @@
 AC_PREREQ(2.62)
 AC_INIT(NTCARD, 1.2.2, hmohamadi@bcgsc.ca, ntcard,
-		https://github.com/bcgsc/ntCard)
+		https://github.com/BirolLab/ntCard)
 # add 'foreign' to allow README.md instead of README
 AM_INIT_AUTOMAKE([foreign subdir-objects])
 AC_CONFIG_SRCDIR([ntcard.cpp])

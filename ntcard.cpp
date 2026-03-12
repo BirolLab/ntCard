@@ -45,7 +45,7 @@ static const char USAGE_MESSAGE[] =
     "      --help	display this help and exit\n"
     "      --version	output version information and exit\n"
     "\n"
-    "Report bugs to https://github.com/bcgsc/ntCard/issues\n";
+    "Report bugs to https://github.com/BirolLab/ntCard/issues\n";
 
 using namespace std;
 

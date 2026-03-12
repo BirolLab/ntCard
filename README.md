@@ -1,9 +1,9 @@
-[![Release](https://img.shields.io/github/release/bcgsc/ntCard.svg)](https://github.com/bcgsc/ntCard/releases)
-[![Downloads](https://img.shields.io/github/downloads/bcgsc/ntCard/total?logo=github)](https://github.com/bcgsc/ntCard/archive/master.zip)
+[![Release](https://img.shields.io/github/release/BirolLab/ntCard.svg)](https://github.com/BirolLab/ntCard/releases)
+[![Downloads](https://img.shields.io/github/downloads/BirolLab/ntCard/total?logo=github)](https://github.com/BirolLab/ntCard/archive/master.zip)
 [![Conda](https://img.shields.io/conda/dn/bioconda/ntcard?label=Conda)](https://anaconda.org/bioconda/ntcard)
-[![Issues](https://img.shields.io/github/issues/bcgsc/ntCard.svg)](https://github.com/bcgsc/ntCard/issues)
+[![Issues](https://img.shields.io/github/issues/BirolLab/ntCard.svg)](https://github.com/BirolLab/ntCard/issues)
 
-![Logo](https://github.com/bcgsc/ntCard/blob/master/ntcard-logo.png)
+![Logo](https://github.com/BirolLab/ntCard/blob/master/ntcard-logo.png)
 
 
 ntCard 

@@ -13,6 +13,7 @@ jobs:
   - script: |
       ./autogen.sh
       ./configure
+      export CXXFLAGS="${CXXFLAGS} -Wno-array-bounds"
       make distcheck
     displayName: Compiling and testing ntCard
   - script: |
@@ -42,7 +43,7 @@ jobs:
       make distcheck
     displayName: Compiling and testing ntCard with gcc 9
     
-- job: linux_clang9
+- job: linux_clang14
   pool:
     vmImage: 'ubuntu-latest'
   steps:
@@ -53,11 +54,11 @@ jobs:
       sudo apt-get update -qq
       sudo apt-get install -qq autoconf automake gcc-9 g++-9 make
     displayName: Install common
-  - script: sudo apt-get install -qq clang-9
-    displayName: Install clang-9
+  - script: sudo apt-get install -qq clang-14
+    displayName: Install clang-14
   - script: |
       ./autogen.sh
-      export DISTCHECK_CONFIGURE_FLAGS="CC=clang-9 CXX=clang++-9"
-      ./configure CC=clang-9 CXX=clang++-9
+      export DISTCHECK_CONFIGURE_FLAGS="CC=clang-14 CXX=clang++-14"
+      ./configure CC=clang-14 CXX=clang++-14
       make distcheck
-    displayName: Compiling and testing ntCard with clang 9
+    displayName: Compiling and testing ntCard with clang 14

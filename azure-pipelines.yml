@@ -13,7 +13,7 @@ jobs:
   - script: |
       ./autogen.sh
       ./configure
-      export CXXFLAGS="${CXXFLAGS} -Wno-error=array-bounds"
+      export DISTCHECK_CONFIGURE_FLAGS="CXXFLAGS='${CXXFLAGS} -Wno-error=array-bounds'"
       make distcheck
     displayName: Compiling and testing ntCard
   - script: |

@@ -13,7 +13,7 @@ jobs:
   - script: |
       ./autogen.sh
       ./configure
-      export CXXFLAGS="${CXXFLAGS} -Wno-array-bounds="
+      export CXXFLAGS="${CXXFLAGS} -Wno-error=array-bounds"
       make distcheck
     displayName: Compiling and testing ntCard
   - script: |
@@ -54,7 +54,7 @@ jobs:
       sudo apt-get update -qq
       sudo apt-get install -qq autoconf automake gcc-9 g++-9 make
     displayName: Install common
-  - script: sudo apt-get install -qq clang-14
+  - script: sudo apt-get install -qq clang-14 libomp-14-dev
     displayName: Install clang-14
   - script: |
       ./autogen.sh

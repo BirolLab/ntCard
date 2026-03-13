@@ -45,7 +45,7 @@ static const char USAGE_MESSAGE[] =
     "      --help	display this help and exit\n"
     "      --version	output version information and exit\n"
     "\n"
-    "Report bugs to https://github.com/bcgsc/ntCard/issues\n";
+    "Report bugs to https://github.com/BirolLab/ntCard/issues\n";
 
 using namespace std;
 
@@ -255,8 +255,8 @@ compEst(const uint16_t* t_Counter, double& F0Mean, double fMean[])
 		pMean[i] /= 1.0 * opt::nSamp;
 	}
 
-	F0Mean = (ssize_t)(
-	    (opt::rBits * log(2) - log(pMean[0])) * 1.0 * ((uint64_t)1 << (opt::sBits + opt::rBits)));
+	F0Mean = (ssize_t)((opt::rBits * log(2) - log(pMean[0])) * 1.0 *
+	                   ((uint64_t)1 << (opt::sBits + opt::rBits)));
 	for (size_t i = 0; i < 65536; i++)
 		fMean[i] = 0;
 	if (pMean[0] * (log(pMean[0]) - opt::rBits * log(2)) == 0) {

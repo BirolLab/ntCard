@@ -6,11 +6,11 @@ AM_INIT_AUTOMAKE([foreign subdir-objects])
 AC_CONFIG_SRCDIR([ntcard.cpp])
 AC_CONFIG_HEADER([config.h])
 
-if test -z $CXXFLAGS; then
+if test -z "$CXXFLAGS"; then
     CXXFLAGS='-O3'
 fi
 
-if test -z $CCFLAGS; then
+if test -z "$CCFLAGS"; then
     CCFLAGS='-O3'
 fi
 
@@ -70,7 +70,7 @@ AM_CONDITIONAL([HAVE_LIBZ],
 # Check for OpenMP.
 AC_LANG_PUSH([C++])
 AC_OPENMP
-if test -z $OPENMP_CXXFLAGS; then
+if test -z "$OPENMP_CXXFLAGS"; then
 	AC_MSG_ERROR([NTCARD must be compiled with a C++ compiler that supports OpenMP threading.])
 fi
 AC_LANG_POP([C++])
